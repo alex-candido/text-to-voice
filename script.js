@@ -37,3 +37,5 @@ btnSpeak.addEventListener('click', () => {
   }
 }
 textToVoice();
+
+console.log('Script funcionou')
