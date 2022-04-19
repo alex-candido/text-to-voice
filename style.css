@@ -1,0 +1,160 @@
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #B5CCFF;
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #3B4F7D;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas: ". . ."
+                        ". b ."
+                        " . . .";
+  height: 1000;
+  width: 100%;
+  justify-items: center;
+}
+
+.display {
+  display: grid;
+  box-sizing: border-box;
+  background: conic-gradient(from 145.9deg at 52.72% 30.87%, #97E1D4 -190.84deg, #6284FF 30.46deg, #FF72B6 51.42deg, #F9E5E8 94.7deg, #97E1D4 169.16deg, #6284FF 390.46deg);
+  grid-area: b;
+  height: 550px;
+  width: 290px;
+  border-radius: 30px;
+  /* align-self: center;
+  justify-self: center; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 50% 1fr;
+  justify-items: center;
+}
+
+.status-bar {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+  grid-row: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* justify-content: center;
+  align-items: flex-start;
+  grid-area: a; */ 
+}
+
+.status-bar > div {
+  padding-top: 10px;
+} 
+
+.status-bar > p {
+  padding-top: 10px;
+  margin: 0;
+} 
+
+.box {
+  display: flex;
+  box-sizing: border-box;
+  background: linear-gradient(80.96deg, rgba(231, 238, 255, 0.5) 1.5%, rgba(224, 234, 255, 0.5) 96%);
+  height: 180px;
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px #C2CCEB, -0px -0px 5px #EAEFFF;
+  padding: 30px;
+  grid-row: 2;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+.box label {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #3B4F7D;
+}
+
+.box select {
+  width: 140px;
+  height: 23px;
+  border: 0;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  box-shadow: 0px 0px 0px #C2CCEB, -0px -0px 5px #EAEFFF;
+  color: #3B4F7D;
+}
+
+.box input {
+  width: 135px;
+  border: 0;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #3B4F7D;
+  box-shadow: 0px 0px 0px #C2CCEB, -0px -0px 5px #EAEFFF;
+}
+
+.box button {
+  background: #E6E7FD;
+  box-shadow: -4px -4px 8px #F7F9FF, 4px 4px 8px #D1D2F2;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #3B4F7D;
+}
+
+.dots {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  grid-row: 3;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 20px;
+} 
+
